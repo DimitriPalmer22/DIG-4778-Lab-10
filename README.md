@@ -1,0 +1,4 @@
+1. A* pathfinding finds paths by first dividing the area into a grid. Each cell in the grid is then given a value based on how far it is from the start and end points of the path. Starting from the starting cell, the algorithm keeps adding adjacent cells to a list representing the current path until it reaches the end. Each path is then compared based on length and the shortest path is used.
+2. When updating obstacles in real time, the entire pathfinding algorithm needs to be run again, which can be expensive.
+3. For larger grids or open-world settings, you could subdivide the world into a group of smaller maps. This way, the pathfinding algorith won't be too expensive.
+4. If I were to add weighted cells, I would change the formula that calculates the value for each cell. This new formula would consider the "difficulty" of a grid cell. This "difficulty" value is stored in the cell's data.
